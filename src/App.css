@@ -1,38 +1,180 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #E3BD82;
+}
+
+body {
+  background-image: url("fundo-1.png");
+}
+
+.header{
+  background-color: rgb(48, 47, 47);
+  padding: 10px 0;
+}
+
+.center{
+    display: flex;
+    margin: 0 auto;
+    max-width: 2000px;
+    padding: 0 2%;
+    padding-bottom: 10px;
+}
+
+.header__logo{
+  width: 50%;
+}
+
+.header__logo img{
+  width: 300px;
+}
+
+.haeder__loginForm{
+  width: 50%;
+  text-align: right;
+}
+
+.haeder__loginForm input[type=text],
+.haeder__loginForm input[type=password]{
+  width: 180px;
+  height: 20px;
+  border: 1px solid #E3BD82;
+  margin-right: 10px;
+}
+
+.haeder__loginForm input[type=submit]{
+  background-color: #E3BD82;
+  border: solid 2px white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0px 10px;
+  height: 24px;
+  border-radius: 5px;
+  color: black;
+}
+
+.nav{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navTable a{
+  text-decoration: none;
+  color: #E3BD82;
+  padding: 0 20px;
+  border: 10px;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navTable a:hover{
+  background-color: gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header__logadoinfo{
+  text-align: right;
+  width: 50%;
+}
+
+.header__logadoInfo a{
+  margin: 0 10px;
+  background-color: #E3BD82;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0px 10px;
+  height: 24px;
+  border-radius: 5px;
+  color: black;
+}
+
+.modalUpload{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+}
+
+.formUpload{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.formValor{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.formValor input{
+  margin-left: 1%;
+}
+
+.formUpload input{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  color: #010101;
+}
+
+.formUpload input[type=submit]{
+  background-color: #E3BD82;
+  cursor: pointer;
+  color: black;
+}
+
+.close-modal-upload{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  width: 30px;
+  text-align: center;
   color: white;
+  line-height: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #E3BD82;
 }
 
-.App-link {
-  color: #61dafb;
+.post-bar{
+  background-color: rgb(48, 47, 47);
+  max-width: 1500px;
+  padding: 10px 10px;
+  margin: 10px 2px;
+  display:inline-flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post{
+  background-color: rgb(48, 47, 47);
+}
+
+.produto{
+  padding: 5px;
+  text-align: center;
+}
+
+.produto p{
+  background-color: rgb(48, 47, 47);
+}
+
+.produto #valor{
+  font-size: 30px; 
+}
+
+.produto img{
+  max-width: 180px;
+}
+
+.rodape_exterior {
+  
 }
